@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "652967318273",
+    "firebase_url": "https://aquabeing-65992.firebaseio.com",
+    "project_id": "aquabeing-65992",
+    "storage_bucket": "aquabeing-65992.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652967318273:android:ff9ce47574f3ab934a8100",
+        "android_client_info": {
+          "package_name": "com.example.aquabeing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "652967318273-qssgvjsrlp557eha19loep8jm11mmeg5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtsxLnmiv135tNfCljoGRCaTgg73ajKQ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "652967318273-qssgvjsrlp557eha19loep8jm11mmeg5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

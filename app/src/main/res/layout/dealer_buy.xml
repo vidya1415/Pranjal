@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+    <!--    <include-->
+    <!--        layout="@layout/toolbar"/>-->
+
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <TextView
+                android:id="@+id/brands"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:text="Brands"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/hv1"
+                android:layout_width="409dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/brands">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/b1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/blogo" />
+
+                    <ImageButton
+                        android:id="@+id/b2"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/b1"
+                        app:layout_constraintTop_toTopOf="@id/b1"
+                        app:srcCompat="@drawable/twplog" />
+
+                    <ImageButton
+                        android:id="@+id/b3"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/b2"
+                        app:layout_constraintTop_toTopOf="@id/b2"
+                        app:srcCompat="@drawable/baileylog" />
+
+                    <ImageButton
+                        android:id="@+id/b4"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/b3"
+                        app:layout_constraintTop_toTopOf="@id/b3"
+                        app:srcCompat="@drawable/aquafinanewlogo" />
+
+                    <ImageButton
+                        android:id="@+id/b5"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+
+                        app:layout_constraintStart_toEndOf="@id/b4"
+                        app:layout_constraintTop_toTopOf="@id/b4"
+                        app:srcCompat="@drawable/kinleylogo" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="212dp"
+                android:text="Categories"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/brands"
+                app:layout_constraintTop_toTopOf="@id/hv1"
+                tools:layout_editor_absoluteX="16dp"
+                tools:ignore="MissingConstraints" />
+
+            <HorizontalScrollView
+                android:layout_width="409dp"
+                android:layout_height="150dp"
+                android:id="@+id/hv2"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/categories">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/b11"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/twlt" />
+                    <ImageButton
+                        android:id="@+id/b12"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/b11"
+                        app:layout_constraintTop_toTopOf="@id/b11"
+                        app:srcCompat="@drawable/flt" />
+                    <ImageButton
+                        android:id="@+id/b13"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/b12"
+                        app:layout_constraintTop_toTopOf="@id/b12"
+                        app:srcCompat="@drawable/olt" />
+                    <ImageButton
+                        android:id="@+id/b14"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/b13"
+                        app:layout_constraintTop_toTopOf="@id/b13"
+                        app:srcCompat="@drawable/tfml" />
+
+                    <ImageButton
+                        android:id="@+id/b15"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+
+                        app:layout_constraintStart_toEndOf="@id/b14"
+                        app:layout_constraintTop_toTopOf="@id/b14"
+                        app:srcCompat="@drawable/hml" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

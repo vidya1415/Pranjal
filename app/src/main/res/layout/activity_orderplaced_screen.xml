@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout tools:context=".OrderplacedScreen" android:orientation="vertical" android:background="#86C3F3" android:layout_gravity="center" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView android:layout_gravity="center_horizontal" android:layout_height="200dp" android:layout_width="250dp" android:src="@drawable/orderconfirmed" android:layout_marginTop="100dp" android:id="@+id/order_placed_image"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="60dp" android:textStyle="bold" android:textSize="50dp" android:textColor="@android:color/black" android:text="Congratulations!!" android:gravity="center" android:fontFamily="cursive"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="60dp" android:textStyle="bold" android:textSize="50dp" android:textColor="@android:color/black" android:text="Your order has been placed!" android:gravity="center" android:fontFamily="cursive"/>
+
+</LinearLayout>

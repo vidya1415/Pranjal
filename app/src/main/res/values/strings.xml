@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PranJal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="register">REGISTER</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_password_hint2">Confirm Password</string>
+    <string name="postal_address">Postal Address</string>
+    <string name="dmail">Dealer mail</string>
+    <string name="dpass">Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="dregister">DEALER REGISTER</string>
+    <string name="title_activity_dealer_location">Map</string>
+
+</resources>

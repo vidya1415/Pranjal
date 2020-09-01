@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardBackgroundColor="@color/cardview_dark_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvcustomer_name_deal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:textColor="@color/whiteTextColor"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:layout_alignParentStart="true"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"/>
+        <TextView
+            android:id="@+id/tvcustomer_address_dealer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Address"
+            android:textSize="15sp"
+            android:textColor="@color/whiteTextColor"
+            android:layout_below="@+id/tvcustomer_name_deal"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"/>
+        <TextView
+            android:id="@+id/tvbrand_in_orders_deal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brand"
+            android:textSize="15sp"
+            android:textColor="@color/whiteTextColor"
+            android:layout_below="@+id/tvcustomer_address_dealer"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"/>
+        <TextView
+            android:id="@+id/tvtype_in_orders_deal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bottle Type "
+            android:textSize="15sp"
+            android:textColor="@color/whiteTextColor"
+            android:layout_below="@+id/tvbrand_in_orders_deal"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"/>
+        <TextView
+            android:id="@+id/tvnumber_in_orders_deal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number Of Bottles"
+            android:textSize="15sp"
+            android:textColor="@color/whiteTextColor"
+            android:layout_below="@+id/tvtype_in_orders_deal"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"/>
+        <TextView
+            android:id="@+id/tvtotal_price_in_orders_deal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="15sp"
+            android:textColor="@color/whiteTextColor"
+            android:layout_below="@+id/tvnumber_in_orders_deal"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

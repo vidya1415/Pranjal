@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <TextView
+        android:id="@+id/faqs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:text="FAQs"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal">
+
+    </TextView>
+    <TextView
+    android:id="@+id/report_a_problem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal"
+    android:layout_below="@+id/faqs"
+    android:layout_marginTop="64dp"
+    android:text="Report A Problem"
+    android:textAlignment="center"
+    android:textSize="32sp"
+    android:textStyle="bold"
+    android:gravity="center_horizontal">
+
+</TextView>
+    <TextView
+        android:id="@+id/customer_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/report_a_problem"
+        android:layout_marginTop="64dp"
+        android:text="Customer Service"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal">
+
+    </TextView>
+
+
+
+    
+</RelativeLayout>

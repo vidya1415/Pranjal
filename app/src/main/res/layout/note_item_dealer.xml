@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardBackgroundColor="@color/cardview_dark_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvdealer_name_cust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dealer Name"
+            android:textColor="@color/whiteTextColor"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:layout_alignParentStart="true"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"/>
+        <TextView
+            android:id="@+id/tvdealer_address_cust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dealer Address"
+            android:textColor="@color/whiteTextColor"
+            android:layout_below="@+id/tvdealer_name_cust"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

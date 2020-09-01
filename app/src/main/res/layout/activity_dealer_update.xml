@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AFD5F3"
+    tools:context=".dealer_update">
+
+    <TextView
+        android:id="@+id/add_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="76dp"
+        android:gravity="center_horizontal"
+        android:text="Add Available Products"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_products"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="161dp"
+        android:gravity="center_horizontal"
+        android:text="Select which Brand You Want to Update"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/linear1_add_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selection"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/bisleri_add_dealer"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/bislerinewlogo" />
+
+        <ImageView
+            android:id="@+id/aquafina_add_dealer"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/aquafinanewlogo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2_add_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1_add_products"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/kinley_add_dealer"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/kinleylogo" />
+
+        <ImageView
+            android:id="@+id/divyajal_add_dealer"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/divyajallogo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3_add_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2_add_products"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tataplus_add_dealer"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/tatapluslogo" />
+    </LinearLayout>
+
+</RelativeLayout>
