@@ -27,7 +27,6 @@ public class dealer_products_list extends AppCompatActivity {
     String dealerID = "",productID;
     private FirebaseFirestore fs;
     FirestoreRecyclerAdapter adapter;
-    ClickListener mClickListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +48,7 @@ public class dealer_products_list extends AppCompatActivity {
         dealerID = i.getExtras().getString("dealers");
 
 
-        productID = fs.collection("dealers").document(dealerID).collection("products").getId();
+        productID = fs.collection("dealers").document(dealerID).collection("products").document().getId();
 
         Log.d("TAG", dealerID);
 
@@ -91,7 +90,11 @@ public class dealer_products_list extends AppCompatActivity {
                         intent.putExtra("pid",productID);
                         intent.putExtra("did",dealerID);
 
+
                         startActivity(intent);
+
+//                        onItemClickListner.onClick(dealerID);
+
                     }
                 });
 
@@ -113,7 +116,6 @@ public class dealer_products_list extends AppCompatActivity {
       private TextView pricing;
           private TextView quantity_needed;
         private TextView type_inlit;
-        private ClickListener mClickListener;
 
 
         public productlistViewHolder(@NonNull View itemView) {
@@ -136,13 +138,14 @@ public class dealer_products_list extends AppCompatActivity {
 //    };
 
 
-    public interface ClickListener{
-        public void onItemClick(View view, int position);
-        public void onItemLongClick(View view, int position);
+    onItemClickListner onItemClickListner;
+
+    public void setOnItemClickListner(onItemClickListner onItemClickListner) {
+        this.onItemClickListner = onItemClickListner;
     }
 
-    public void setCustomOnClickListener(ClickListener clickListener){
-        this.mClickListener = clickListener;
+    public interface onItemClickListner{
+        void onClick(String str);//pass your object types.
     }
 
     @Override

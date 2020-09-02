@@ -58,10 +58,10 @@ public class product_details extends AppCompatActivity {
 //
 //        productID = getIntent().getStringExtra("pid");
 //        dealerID =  getIntent().getStringExtra("did");
-
-        dealerID = "GEAqykAGaOg9ktuqdWu1exj0H6q2";
-        productID = fs.collection("dealers").document(dealerID).collection("products").document().getId();
-
+        Intent i = getIntent();
+        dealerID = i.getExtras().getString("did");
+  //   productID = fs.collection("dealers").document(dealerID).collection("products").document().getId();
+         productID = i.getExtras().getString("pid");
 
         addtocartbtn = (FloatingActionButton) findViewById(R.id.addtocart);
         numberButton = (ElegantNumberButton) findViewById(R.id.counter);
@@ -70,8 +70,10 @@ public class product_details extends AppCompatActivity {
         productname = (TextView) findViewById(R.id.cart_prod_name);
         productType = (TextView) findViewById(R.id.cart_prod_type);
         productPrice = (TextView) findViewById(R.id.prod_price);
+        Log.d("tag", dealerID+" "+productID);
 
-        DocumentReference productref = fs.collection("dealers").document("GEAqykAGaOg9ktuqdWu1exj0H6q2").collection("products").document("8x1Rryxnw59k9O0KDkGF");
+
+        DocumentReference productref = fs.collection("dealers").document(dealerID).collection("products").document(productID);
         productref.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
