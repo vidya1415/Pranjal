@@ -24,7 +24,7 @@ public class dealer_products_list extends AppCompatActivity {
 
     private RecyclerView recyclerViewlist;
     private FirebaseAuth fAuthen;
-    String dealerID,productID;
+    String dealerID = "",productID;
     private FirebaseFirestore fs;
     FirestoreRecyclerAdapter adapter;
     ClickListener mClickListener;
@@ -43,7 +43,11 @@ public class dealer_products_list extends AppCompatActivity {
 //                new IntentFilter("custom-message"));
         recyclerViewlist = findViewById(R.id.recyclerView);
 
-        dealerID = "GEAqykAGaOg9ktuqdWu1exj0H6q2";
+       // dealerID = "GEAqykAGaOg9ktuqdWu1exj0H6q2";
+        Intent i = getIntent();
+//The second parameter below is the default string returned if the value is not there.
+        dealerID = i.getExtras().getString("dealers");
+
 
         productID = fs.collection("dealers").document(dealerID).collection("products").getId();
 

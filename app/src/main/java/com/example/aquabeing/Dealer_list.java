@@ -61,7 +61,7 @@ public class Dealer_list extends AppCompatActivity {
     }
     private void setUpRecyclerView(){
         final Note note = new Note();
-        final String dealerid = fs.collection("dealers").getId();
+        final String dealerid = fs.collection("dealers").document().getId();
         final Query query = fs.collection("dealers");
         final FirestoreRecyclerOptions<Note> option = new FirestoreRecyclerOptions.Builder<Note>()
                 .setQuery(query, Note.class).build();
@@ -69,29 +69,17 @@ public class Dealer_list extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.dealer_list_rec_view);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        noteAdapter.setCustomOnClickListener(new NoteAdapter.ClickListener() {
-            @Override
-            public void onItemClick(View view, int position) {
-                Log.d("TAG", "Name Click at " +position);
-//                             String Dealerid = fs.collection("dealers").document().getId();
-//                Bundle bundle = new Bundle();
-//                bundle.putString("dealers",note.getName());
-                Intent activityBstartIntent = new Intent(getApplicationContext(), dealer_products_list.class);
-                activityBstartIntent.putExtra("key", dealerid.toString());
-                startActivity(activityBstartIntent);
+     noteAdapter.setOnItemClickListner(new NoteAdapter.onItemClickListner() {
+         @Override
+         public void onClick(String str) {
+                      Bundle bundle = new Bundle();
+               Intent activityBstartIntent = new Intent(getApplicationContext(), dealer_products_list.class);
+             bundle.putString("dealers",str);
+             activityBstartIntent.putExtra("dealers",str);
+            startActivity(activityBstartIntent);
 
-
-
-
-            }
-
-            @Override
-            public void onItemLongClick(View view, int position) {
-                Log.d("TAG", "Name Click at " +position);
-
-            }
-        });
-
+         }
+     });
         recyclerView.setAdapter(noteAdapter);
 
     }
